@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | Github-Wrapper</title>
+
+  <link rel="stylesheet" href="profile.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!--------------------------------- Navbar Begins -------------------------------------->
+
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid" id="navbar">
+      <a class="navbar-brand fs-2 d-flex align-items-center" href="/github-wrapper-javascript/">
+        <img src="./assets/images/GithubBlueCat.png" alt="logo" width="70" height="40"
+          class="d-inline-bloc align-text-top" />
+        Github-Wrapper
+      </a>
+    </div>
+  </nav>
+
+  <!--------------------------------- Navbar Ends -------------------------------------->
+
+  <!---------------------------- Main Section Begins ----------------------------------->
+
+  <div class="container-fluid" id="main-div">
+    <div class="row profile-div">
+
+
+      <div class="col-sm-12 col-md-6 col-lg-5 h-100" id="profile-pic">
+        <div class="card" style="width: 25rem">
+          <img id="avatarurl" src="" class="card-img-top img-fluid"
+            alt="profile-image" />
+          <div class="card-body">
+            <p class="card-text fs-2 text-center fw-bold" id="usernameheading"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-7 h-100" id="profile-stats">
+        <table class="table text-light table-borderless fs-1">
+          <tbody>
+            <tr>
+              <td class="tabPos">Full Name :</td>
+              <td id="fullname"></td>
+            </tr>
+            <tr>
+              <td class="tabPos">Repository :</td>
+              <td id="repocount"></td>
+            </tr>
+            <tr>
+              <td class="tabPos">Followers :</td>
+              <td id="followercount"></td>
+            </tr>
+            <tr>
+              <td class="tabPos">Following :</td>
+              <td id="followingcount"></td>
+            </tr>
+            <tr>
+              <td class="text-end">
+                <a id="profileurl" target="_blank" href="\"
+                  class="btn btn-primary fs-2">Visit Profile</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <center>
+        <hr size="5" class="bg-light w-75" />
+      </center>
+    </div>
+
+    
+
+    <!-- <div class="container text-light">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3">
+                <div class="col mb-4">Column</div>
+                <div class="col mb-4">Column</div>
+                <div class="col mb-4">Column</div>
+                <div class="col mb-4">Column</div>
+                <div class="col mb-4">Column</div>
+                <div class="col mb-4">Column</div>
+                <div class="col mb-4">Column</div>
+            </div>
+        </div> -->
+
+    <div class="row repo-div">
+      <h1 class="text-center text-light mb-5 pb-5">Repositories</h1>
+
+      <div class="container mt-5">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-4" id="repoList">
+
+
+          <!-- <div class="col mb-5 brad">
+            <div class="card" id="rcard">
+              <div class="card-body fs-4 position-relative">
+                <h2 class="card-title text-center fs-3">
+                  Repo Heading
+                </h2>
+                <hr />
+                <p class="card-text">Description :</p>
+                <p>
+                  With supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+                <p class="card-text">Created on : 25 Feb 2023</p>
+                <p class="card-text">Open Issues : 0</p>
+
+
+                <div class="position-absolute fixed-bottom pb-5">
+                  <hr />
+                  <div class="d-flex justify-content-around">
+                    <a href="#" class="btn btn-primary fs-4">Visit Repository</a>
+                    <a href="#" class="btn btn-success fs-4 disabled">Visit Deployment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+        </div>
+      </div>
+
+      <center>
+        <hr size="5" class="bg-light w-75" />
+      </center>
+    </div>
+
+    <div class="row status1">
+
+      <div class="container-fluid">
+
+
+        <div class="st row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 mb-5">
+
+
+          <div class="col" id="st1">
+            <p>
+              <img align="left" id="st1img"
+                src=""
+                alt="please try again" />
+            </p>
+          </div>
+
+
+          <div class="col" id="st2">
+            <p>
+              <img align="center" id="st2img"
+                src=""
+                alt="please try again" />
+            </p>
+          </div>
+        </div>
+
+
+
+        <div class="st row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 mt-5">
+          <div class="col" id="st3">
+            <p>
+              <img align="center" id="st3img" src=""
+                alt="please try again" />
+            </p>
+          </div>
+        </div>
+
+
+        <div class="st row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 mt-5">
+          <div class="col" id="st4">
+            <p>
+              <img align="center" id="st4img" src=""
+                alt="please try again" />
+            </p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+  <script src="profile.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
